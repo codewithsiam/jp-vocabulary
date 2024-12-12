@@ -8,7 +8,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
   const navRef = useRef(null);
-
+  console.log("user", user);
   const toggleMenu = () => setIsOpen(!isOpen);
 
   useEffect(() => {
@@ -174,7 +174,7 @@ const MobileUserMenu = ({ user, logout, closeMenu }) => (
         <div className="w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center overflow-hidden">
           {user?.img ? (
             <img
-              src={user?.img}
+              src={user?.photoUrl}
               alt={user?.name}
               className="w-full h-full object-cover"
             />

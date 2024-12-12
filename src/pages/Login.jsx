@@ -56,7 +56,7 @@ const Login = () => {
         </UXForm>
         <div className="px-6 py-4 bg-gray-50 border-t border-gray-200 text-center">
           <p className="text-sm text-gray-600">
-            Don&lsquo;t have an account?
+            Don&lsquo;t have an account?{" "}
             <Link
               to="/register"
               className="font-medium text-indigo-600 hover:text-indigo-500 transition duration-150 ease-in-out"

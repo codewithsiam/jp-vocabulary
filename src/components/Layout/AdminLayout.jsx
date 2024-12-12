@@ -62,11 +62,11 @@ const AdminLayout = () => {
             <h1 className="text-2xl font-bold mb-6">Admin Dashboard</h1>
             <div className="mt-auto p-4">
               <div className="flex flex-col gap-2 items-center space-x-4 cursor-pointer">
-                {user?.img ? (
+                {user?.photoUrl ? (
                   <img
-                    src={user.img}
+                    src={user.photoUrl}
                     alt={user.name}
-                    className="w-full h-full object-cover"
+                    className="object-cover w-10 h-10 rounded-full"
                   />
                 ) : (
                   <span className="text-indigo-600 bg-indigo-100 border border-indigo-500 font-semibold text-lg flex items-center justify-center w-10 h-10 rounded-full">

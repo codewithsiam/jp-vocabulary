@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 
 const Home = () => {
@@ -13,8 +14,13 @@ const Home = () => {
             Master Japanese vocabulary, grammar, and culture with interactive
             tutorials.
           </p>
-          <button className="mt-8 px-8 py-3 bg-white text-pink-600 font-semibold rounded-md shadow-md hover:bg-yellow-100 transition">
-            Get Started for Free
+          <button className="mt-8">
+            <Link
+              className="mt-8 px-8 py-3 bg-white text-pink-600 font-semibold rounded-md shadow-md hover:bg-yellow-100 transition"
+              to="/login"
+            >
+              Get Started for Free
+            </Link>
           </button>
         </div>
       </section>

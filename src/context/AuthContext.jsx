@@ -15,6 +15,7 @@ export const AuthProvider = ({ children }) => {
       if (token) {
         try {
           const res = await axiosPublic.get("/auth/me");
+          console.log('res', res);
           setUser(res.data.data.user);
         } catch (error) {
           console.error("Error checking authentication", error);
