@@ -1,3 +1,4 @@
+
 # JP Vocabulary
 
 **JP Vocabulary** is an interactive Japanese vocabulary learning application aimed at helping users expand their vocabulary and improve their communication skills in Japanese. The application is built using React.js (Vite), Tailwind CSS, and other essential libraries to provide a smooth learning experience for both users and administrators.
@@ -61,7 +62,7 @@ The system implements a custom authentication mechanism:
 
 ### Lesson and Vocabulary Management
 - **Create, Update, and Delete Lessons/Vocabulary**: Admins can manage lessons and vocabulary entries, including filtering vocabulary by lesson number.
-- **Pagination**: Implement pagination for vocabulary display on user side.
+- **Pagination**: Implement pagination for vocabulary display on the user side.
 
 ### User Learning System
 - **Lesson Access**: Users can view lessons and vocabulary, and navigate through them.
@@ -76,23 +77,24 @@ Follow these steps to get started with the project:
 1. Clone the repository:
    ```bash
    git clone <repository-url>
-Navigate to the project folder:
+   ```
+2. Navigate to the project folder:
+   ```bash
+   cd jp-vocabulary
+   ```
+3. Install the dependencies:
+   ```bash
+   npm install
+   ```
+4. Run the development server:
+   ```bash
+   npm run dev
+   ```
 
-bash
-Copy code
-cd jp-vocabulary
-Install the dependencies:
+### Configuration
+**Server URL**:  
+To configure your backend server URL, modify the `src/config/envConfig.js` file and add your server URL.
 
-bash
-Copy code
-npm install
-Run the development server:
+---
 
-bash
-Copy code
-npm run dev
-
-Configuration
-Server URL
-To configure your backend server URL, modify the src/config/envConfig.js file and add your server URL.
-
+> Enjoy your journey to mastering Japanese! 🎌
