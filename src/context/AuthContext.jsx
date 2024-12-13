@@ -15,7 +15,6 @@ export const AuthProvider = ({ children }) => {
       if (token) {
         try {
           const res = await axiosPublic.get("/auth/me");
-          console.log('res', res);
           setUser(res.data.data.user);
         } catch (error) {
           console.error("Error checking authentication", error);
@@ -29,7 +28,7 @@ export const AuthProvider = ({ children }) => {
 
   const login = async (email, password) => {
     const res = await axiosPublic.post("/auth/login", { email, password });
-    console.log("resopnse from login api:",res);
+    console.log(res.data.data);
     if (res.data.success) {
       localStorage.setItem("authToken", res.data.data.token);
       toast.success(res.data.message);
@@ -47,7 +46,7 @@ export const AuthProvider = ({ children }) => {
     const formData = { name, email, password, photoUrl };
 
     const res = await axiosPublic.post("/auth/register", formData);
-    console.log(res);
+    console.log(res.data.success);
     if (res.data.success) {
       toast.success(res.data.message);
       return true;
